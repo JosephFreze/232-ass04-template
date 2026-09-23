@@ -154,7 +154,7 @@ void test_createNode_next_null(void)
 void test_destroyNode_sets_null(void)
 {
     Node *b = createNode(45);
-    destroyNode(b);
+    destroyNode(b); 
 
     TEST_ASSERT_EQUAL(NULL, b->value);
 }
