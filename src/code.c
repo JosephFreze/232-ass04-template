@@ -89,7 +89,7 @@ static void _nullify(Node **nodePtrPtr)
 // Return the first node in the list.
 // This is simply the head — no traversal needed.
 //
-// Returns NULL if the list is empty.
+// Returns NULL Sif the list is empty.
 //
 // Called by:
 //   detachFirst
@@ -380,7 +380,7 @@ Node* detachFirst(Node **headPtrPtr)
 
     *headPtrPtr = detachedPtr->nextPtr;
 
-    _nullify(&detachedPtr->nextPtr);
+    _nullify(&(detachedPtr->nextPtr));
 
     return detachedPtr;
 }
