@@ -70,6 +70,7 @@ int main(void)
     RUN_TEST(test_listLength_three);
     RUN_TEST(test_printList_empty);
 
+    // test
     return UNITY_END();
 }
 
